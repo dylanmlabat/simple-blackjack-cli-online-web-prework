@@ -68,10 +68,11 @@ def runner
   card_total = initial_round
   until card_total > 21
     hit?(card_total)
-    if answer == "s"
-    prompt_user
     answer = get_user_input
-  end
+    if answer == "s"
+      prompt_user
+      answer = get_user_input
+    end
   end
   end_game
 end
