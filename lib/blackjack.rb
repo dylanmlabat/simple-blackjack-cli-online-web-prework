@@ -35,7 +35,7 @@ def initial_round
   card_total = first_card + second_card
   
   display_card_total(card_total)
-  card_total
+  return card_total
 end
 
 def hit?(card_total)
